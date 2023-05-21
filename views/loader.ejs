@@ -8,8 +8,8 @@
 <div class="up-de" >
   
     <form action="/update/<%= data[i]._id %>" method="POST" class="update">
-      
-        <input type="text" class="forms" name="editText" value="<%= data[i].messege %>">
+       
+        <input type="text" class="forms" name="editText" value="<%= i+1 %>  <%= data[i].messege %>">
        
         <input type="submit" value="Edit" class="ed-btn" >
     </form>
