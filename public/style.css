@@ -1,3 +1,17 @@
+.up-de{
+   
+  width: 100%;
+  padding: 0% 22%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  justify-items: center;
+  align-content: space-between;
+
+}
+
 
 .work{
     display: flex;
@@ -19,6 +33,100 @@
 }
 
 
+.ed-btn{
+
+  border: 0;
+  width: 3rem;
+  height: 1.5rem;
+ display: inline;
+ background-color: #d0dcd0; /* Green */
+ transition-duration: 0.4s;
+}
+
+.ed-btn:hover{
+
+  background-color: #000000; /* Green */
+  color: white;
+  border-radius: 2%;
+
+
+
+}
+
+.delete-btn{
+
+
+
+  border: 0;
+  width: 3rem;
+  height: 1.5rem;
+ display: inline;
+ background-color: rgb(187, 50, 50); /* Green */
+ color: whitesmoke;
+ transition-duration: 0.4s;
+}
+.delete-btn:hover{
+
+  background-color: #112020; /* Green */
+  color: white;
+  border-radius: 2%;
+ 
+
+}
+
+.delete{
+  
+  margin-top: 0.16em;
+  /* margin-block-end: 0.1em; */
+}
+
+.forms{
+
+  background: transparent;
+  border: 0px;
+  border-bottom: 1px solid rgb(240, 245, 245);
+  width: 25rem;
+  margin-right: 1rem;
+  margin-left: rem;
+  column-gap: 4rem;
+  font-size: larger;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+input:focus{
+  background-color: white;
+  border-color: white;
+  border: 0px;
+ 
+}
+
+.head{
+   color: #072c32fc;
+   transition-duration: 0.4s;
+   width: auto;
+}
+
+.head:hover{
+
+
+  background-color: rgb(106, 48, 48);
+  color: #4CAF50;
+  height: 125%;
+  border-top-left-radius:30% ;
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 00%;
+  scroll-padding-top: 10%;
+  padding-bottom: -1%;
+  padding-top: 5%;
+  padding: 1%;
+  text-align: center;
+
+
+}
+
 p{
 
   border-bottom: 1px solid rgb(240, 245, 245);
@@ -33,7 +141,9 @@ p{
 .task{
 
     background: transparent;
+    text-align: center;
     border: none;    
+    width: 20rem;
     border-bottom: 1px solid rgb(2, 2, 2);
 }::placeholder{
     color: rgba(248, 248, 252, 0.545);

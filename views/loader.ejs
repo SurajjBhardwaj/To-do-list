@@ -1,15 +1,24 @@
 
 <link rel="stylesheet" href="style.css">
 
-<div class="work" style="background-color: rgb(99, 157, 207);;">
-    <h1 style="text-align: center; width: 125%;color :#1f4d80" >YOUR todo List</h1>
-<% for(var i=0;i<data.length;i++){ %>
-    <form action="/delete" method="POST">
-    
-    <p style="display: inline-block;" ><input type="checkbox" name="checkbox" value="<%= data[i]._id %>" onchange="this.form.submit()"> <%= data[i].messege %> </p><br>
-</form>
-<% } %>
 
+<div class="work" style="background-color: rgb(99, 157, 207);">
+    <h1 class="head">YOUR TO-DO list</h1><br>
+<% for(var i=0;i<data.length;i++){ %>
+<div class="up-de" >
+  
+    <form action="/update/<%= data[i]._id %>" method="POST" class="update">
+      
+        <input type="text" class="forms" name="editText" value="<%= data[i].messege %>">
+       
+        <input type="submit" value="Edit" class="ed-btn" >
+    </form>
+
+    <form action="/delete/<%= data[i]._id %>" method="POST" class="delete" >
+        <input type="submit" value="delete" class="delete-btn">
+    </form>
+</div>
+<% } %>
 
 <form action="/upload" method="POST" class="new" >
    <input type="text" class="task" name="work" placeholder="Your task" required >
