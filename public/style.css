@@ -198,3 +198,24 @@ p{
   box-shadow:20px 20px 50px 10px pink;
 }
 }
+
+
+@media screen and (max-width: 1673px) and (min-width: 1400px) {
+
+  .up-de{
+   
+    width: 100%;
+    padding: 0% 3%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-items: center;
+    align-content: space-between;
+  
+  }
+
+
+}
+
